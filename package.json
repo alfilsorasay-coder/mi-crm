@@ -1,0 +1,14 @@
+{
+  "name": "nexo-crm",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing page del CRM (Módulo 1, Vibe Coder Next) servida con Node sin dependencias.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}
