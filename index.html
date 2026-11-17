@@ -132,6 +132,16 @@
   .cta-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
   .cta small{display:block;margin-top:20px;font-size:.85rem;color:rgba(255,255,255,.92)}
 
+  /* faq */
+  .faq{display:grid;gap:12px;max-width:820px}
+  .faq details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:0 20px}
+  .faq summary{cursor:pointer;padding:18px 0;font-weight:650;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px}
+  .faq summary::-webkit-details-marker{display:none}
+  .faq summary::after{content:"+";color:var(--brand);font-size:1.35rem;line-height:1;font-weight:600}
+  .faq details[open] summary::after{content:"\2013"}
+  .faq details[open] summary{border-bottom:1px solid var(--line)}
+  .faq p{margin:0;padding:16px 0 18px;color:var(--muted);font-size:.95rem;max-width:66ch}
+
   /* footer */
   .site-footer{border-top:1px solid var(--line);padding-block:36px;color:var(--muted);font-size:.88rem}
   .footer-grid{display:grid;gap:24px}
@@ -326,6 +336,37 @@
           </ul>
           <a class="btn btn-ghost" href="#contacto">Hablar con ventas</a>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="preguntas" aria-labelledby="preguntas-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="preguntas-title">Preguntas frecuentes</h2>
+        <p>Lo que m&aacute;s nos preguntan antes de empezar. Si falta algo, escr&iacute;benos y lo a&ntilde;adimos.</p>
+      </div>
+      <div class="faq">
+        <details>
+          <summary>&iquest;Puedo traer mis clientes desde una hoja de c&aacute;lculo?</summary>
+          <p>S&iacute;. Se importa un CSV con las columnas que ya usas (nombre, email, tel&eacute;fono, notas) y el CRM las mapea. Si el archivo viene desordenado, se puede ajustar antes de confirmar la importaci&oacute;n.</p>
+        </details>
+        <details>
+          <summary>&iquest;Hay que instalar algo en el ordenador?</summary>
+          <p>No. Nexo funciona en el navegador, as&iacute; que sirve cualquier equipo con internet. En el m&oacute;vil se usa desde el mismo navegador, sin descargar una app de la tienda.</p>
+        </details>
+        <details>
+          <summary>&iquest;Qu&eacute; pasa si dejo de pagar?</summary>
+          <p>Tu cuenta pasa al plan gratuito y conservas los datos y los 200 clientes incluidos. Nada se borra: los clientes por encima del l&iacute;mite quedan de solo lectura hasta que vuelvas a un plan de pago.</p>
+        </details>
+        <details>
+          <summary>&iquest;Mis datos son m&iacute;os?</summary>
+          <p>S&iacute;. Son tuyos y puedes exportarlos completos en CSV cuando quieras. No se usan para entrenar modelos ni se comparten con terceros.</p>
+        </details>
+        <details>
+          <summary>&iquest;Sirve si vendo por WhatsApp y no por correo?</summary>
+          <p>Sirve igual. El CRM registra la conversaci&oacute;n como nota o actividad, con su fecha y su pr&oacute;ximo paso, para que no dependas de recordar en qu&eacute; qued&oacute; cada cliente.</p>
+        </details>
       </div>
     </div>
   </section>
